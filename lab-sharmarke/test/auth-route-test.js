@@ -88,7 +88,7 @@ describe('Auth Routes', function () {
         User.remove({})
           .then(() => done())
           .catch(done);
-      }); 
+      });
 
       it('should return a token', done => {
         request.get(`${url}/api/signin`)
